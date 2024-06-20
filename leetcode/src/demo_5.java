@@ -1,16 +1,7 @@
 import java.util.Scanner;
 public class demo_5 {
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        String s = input.next();
-        Solution p = new Solution();
 
-            p.longestPalindrome(s);
-
-
-        System.out.println(p.longestPalindrome(s));
-    }
 
 }
 
@@ -62,6 +53,8 @@ public class demo_5 {
 //        return ans;
 //    }
 //}
+
+
 
 //动态规划 10%
 //class Solution {
