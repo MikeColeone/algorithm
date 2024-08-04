@@ -1,10 +1,10 @@
-package com.method;
-
-public class demo_5 {
-
-
-
-}
+//package com.method;
+//
+//public class demo_5 {
+//
+//
+//
+//}
 
 ////暴力求解 5%
 //class Solution {
