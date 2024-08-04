@@ -1,8 +1,8 @@
-package com.method;
-
-public class demo_1652 {
-
-}
+//package com.method;
+//
+//public class demo_1652 {
+//
+//}
 
 //暴力求解
 //class Solution {
