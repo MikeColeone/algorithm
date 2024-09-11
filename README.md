@@ -15,7 +15,7 @@
 6. 哈希表 3137
 7. 滑动窗口
    - [1423.可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/)
-## 题目总结
+## UPDATE
 
 - 15.相加为0
   - 2024.08.21 双指针
