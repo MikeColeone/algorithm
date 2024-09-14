@@ -14,9 +14,12 @@
 5. 分治：50 
 6. 哈希表 3137
 7. 滑动窗口
-   - [1423.可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/)
+  - [1423.可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/)
+- 模拟
+  - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 ## UPDATE
-
+- 2390.从字符串移除星号
+  - 2024-09-13 模拟 简单的栈模拟 移除顶部元素
 - 15.相加为0
   - 2024.08.21 双指针
 - 138
