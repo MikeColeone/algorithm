@@ -12,8 +12,10 @@
 3. 双指针：
 4. 链表：
 5. 分治：50 
-6. 哈希表 3137
-7. 滑动窗口
+- 哈希表 3137
+- 分治算法
+  - [34.排序数组的查询元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+- 滑动窗口
   - [1423.可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/)
   - [1652.拆炸弹](https://leetcode.cn/problems/defuse-the-bomb/description/)
 - 模拟
