@@ -13,7 +13,7 @@
 4. 链表：
 5. 分治：50 
 - 哈希表 3137
-- 分治算法
+- 二分算法
   - [34.排序数组的查询元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 - 滑动窗口
   - [1423.可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/)
@@ -21,6 +21,9 @@
 - 模拟
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 ## UPDATE
+- [34.排序数组的查询元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+  - 2024.09.18 二分算法
+  - 
 - 1652.拆炸弹 滑动窗口
   - 2024-09-15 
 - 2390.从字符串移除星号

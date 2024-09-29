@@ -54,7 +54,3 @@ public class demo_2461 {
 //        return max;
 //    }
 //}
-
-class Solution{
-
-}
