@@ -11,6 +11,8 @@
 2. 回溯算法：
 3. 双指针：
 4. 链表：
+- [前缀和/差分/栈/队列/堆/字典树/并查集/树状数组/线段树](https://leetcode.cn/circle/discuss/mOr1u6/)
+  - [219.存在重复元素](https://leetcode.cn/problems/contains-duplicate-ii/solutions/1218075/cun-zai-zhong-fu-yuan-su-ii-by-leetcode-kluvk/)
 5. 分治：50 
 - 哈希表 3137
 - 二分算法
