@@ -2,6 +2,8 @@
 
 <img src="https://th.bing.com/th/id/R.fc72ca4bf7062065634d943eb9e3a5ab?rik=QKkQ1hnasxs2kg&riu=http%3a%2f%2fjuzertech.com%2fwp-content%2fuploads%2f2021%2f06%2fLeetCode.jpg&ehk=yARv%2feQyixEo9ORz%2bJB5LiVHNQ48zwqt%2bgc3yLtxyLo%3d&risl=&pid=ImgRaw&r=0" width="100" height="100">
 
+
+## Tools&Environment
 ## Overview
 
 记录leetcode刷题记录，只在作为个人刷题题库，起到复习存储使用。
@@ -13,6 +15,7 @@
 4. 链表：
 - [前缀和/差分/栈/队列/堆/字典树/并查集/树状数组/线段树](https://leetcode.cn/circle/discuss/mOr1u6/)
   - [219.存在重复元素](https://leetcode.cn/problems/contains-duplicate-ii/solutions/1218075/cun-zai-zhong-fu-yuan-su-ii-by-leetcode-kluvk/)
+  - [1679.K和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/description/)
 5. 分治：50 
 - 哈希表 3137
 - 二分算法
@@ -23,6 +26,8 @@
 - 模拟
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 ## UPDATE
+- [1679.K和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/description/)
+  - 哈希表 将数组的移除工作转化为计数
 - [34.排序数组的查询元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
   - 2024.09.18 二分算法
   - 
