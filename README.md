@@ -26,6 +26,8 @@
 - 模拟
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 ## UPDATE
+- practice日期简化算法
+  - 一个if就彰显算法功底了 道阻且长啊 ！
 - [1679.K和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/description/)
   - 哈希表 将数组的移除工作转化为计数
 - [34.排序数组的查询元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
