@@ -5,7 +5,7 @@ function simplify(nums) {
     let r = 0; // 右指针用于扩展区间
 
     while (r < nums.length) {
-        if (!(r+1<nums.length)||!(nums[r]+1===nums[r+1])){
+        if (!(r+1<nums.length)||nums[r]+1!==nums[r+1]){
             result.push(specification(nums[l],nums[r]));
             l = r+1;
         }

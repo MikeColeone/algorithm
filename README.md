@@ -16,6 +16,7 @@
 - [前缀和/差分/栈/队列/堆/字典树/并查集/树状数组/线段树](https://leetcode.cn/circle/discuss/mOr1u6/)
   - [219.存在重复元素](https://leetcode.cn/problems/contains-duplicate-ii/solutions/1218075/cun-zai-zhong-fu-yuan-su-ii-by-leetcode-kluvk/)
   - [1679.K和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/description/)
+  - [121.买股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/description/)
 5. 分治：50 
 - 哈希表 3137
 - 二分算法
@@ -26,6 +27,9 @@
 - 模拟
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 ## UPDATE
+- 2024.11.3
+  - [121.买股票](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/description/) 动态规划
+  - 解题时结合绘图 从差到优化思想 而不一定一蹴而就
 - practice日期简化算法
   - 一个if就彰显算法功底了 道阻且长啊 ！
 - [1679.K和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/description/)
