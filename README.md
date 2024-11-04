@@ -1,6 +1,7 @@
 # [leetcode](https://leetcode.cn/)
 
-<img src="https://th.bing.com/th/id/R.fc72ca4bf7062065634d943eb9e3a5ab?rik=QKkQ1hnasxs2kg&riu=http%3a%2f%2fjuzertech.com%2fwp-content%2fuploads%2f2021%2f06%2fLeetCode.jpg&ehk=yARv%2feQyixEo9ORz%2bJB5LiVHNQ48zwqt%2bgc3yLtxyLo%3d&risl=&pid=ImgRaw&r=0" width="100" height="100">
+[<img src="https://th.bing.com/th/id/R.fc72ca4bf7062065634d943eb9e3a5ab?rik=QKkQ1hnasxs2kg&riu=http%3a%2f%2fjuzertech.com%2fwp-content%2fuploads%2f2021%2f06%2fLeetCode.jpg&ehk=yARv%2feQyixEo9ORz%2bJB5LiVHNQ48zwqt%2bgc3yLtxyLo%3d&risl=&pid=ImgRaw&r=0" width="100" height="100" alt="技术笔记“>](tech.md)
+
 
 
 ## Tools&Environment
@@ -11,7 +12,8 @@
 
 1. 动态规划
 2. 回溯算法：
-3. 双指针：
+- 双指针：
+  - [233.平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/description/)
 4. 链表：
 - [前缀和/差分/栈/队列/堆/字典树/并查集/树状数组/线段树](https://leetcode.cn/circle/discuss/mOr1u6/)
   - [219.存在重复元素](https://leetcode.cn/problems/contains-duplicate-ii/solutions/1218075/cun-zai-zhong-fu-yuan-su-ii-by-leetcode-kluvk/)
@@ -26,7 +28,10 @@
   - [1652.拆炸弹](https://leetcode.cn/problems/defuse-the-bomb/description/)
 - 模拟
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
+  <hr/>
 ## UPDATE
+- 2024.11.4
+  - [233.计算平方和](https://leetcode.cn/problems/sum-of-square-numbers/description/)
 - 2024.11.3
   - [121.买股票](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/description/) 动态规划
   - 解题时结合绘图 从差到优化思想 而不一定一蹴而就
