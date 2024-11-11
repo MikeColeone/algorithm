@@ -3,6 +3,9 @@ package com.method;
 import java.util.EnumSet;
 
 public class demo_121 {
+    public static void main(String[] args) {
+
+    }
 }
 
 //买股票的最佳时机
@@ -22,3 +25,4 @@ class Solution {
         return max;
     }
 }
+
