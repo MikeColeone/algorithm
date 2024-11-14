@@ -1,6 +1,6 @@
 # [leetcode](https://leetcode.cn/)
 
-[<img src="https://th.bing.com/th/id/R.fc72ca4bf7062065634d943eb9e3a5ab?rik=QKkQ1hnasxs2kg&riu=http%3a%2f%2fjuzertech.com%2fwp-content%2fuploads%2f2021%2f06%2fLeetCode.jpg&ehk=yARv%2feQyixEo9ORz%2bJB5LiVHNQ48zwqt%2bgc3yLtxyLo%3d&risl=&pid=ImgRaw&r=0" width="100" height="100" alt="技术笔记“>](tech.md)
+[<img src="https://th.bing.com/th/id/R.fc72ca4bf7062065634d943eb9e3a5ab?rik=QKkQ1hnasxs2kg&riu=http%3a%2f%2fjuzertech.com%2fwp-content%2fuploads%2f2021%2f06%2fLeetCode.jpg&ehk=yARv%2feQyixEo9ORz%2bJB5LiVHNQ48zwqt%2bgc3yLtxyLo%3d&risl=&pid=ImgRaw&r=0" width="100" height="100">](tech.md)
 
 
 
