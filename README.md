@@ -20,7 +20,7 @@
   - [1679.K和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/description/)
   - [121.买股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/description/)
 5. 分治：50 
-- 哈希表 3137
+- 哈希表 313
 - 二分算法
   - [34.排序数组的查询元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
 - 滑动窗口
@@ -30,6 +30,9 @@
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
   <hr/>
 ## UPDATE
+- 2024.12.9
+  - doubao_1 哈希表
+  - doubao_3 数字字符串格式化
 - 2024.11.4
   - [233.计算平方和](https://leetcode.cn/problems/sum-of-square-numbers/description/)
 - 2024.11.3
