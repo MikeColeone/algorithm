@@ -182,56 +182,86 @@ import java.util.Map;
 //    }
 //}
 
+//
+//public class Main {
+//    public static int solution(int m, String s) {
+//        int count = 0; // 记录成功匹配 "UCC" 的次数
+//        int n = s.length();
+//        int i = 0;
+//
+//        // 处理字符串长度小于 3 的情况
+//        if (n < 3) {
+//
+//            for (int j = 0; j < n; j++) {
+//                if (calculateEditDistance(s.substring(j, j + 1)) <= m) {
+//                    count++;
+//                    m--;
+//                }
+//            }
+//            System.out.println(count);
+//            return count;
+//        }
+//        // 窗口滑动遍历字符串
+//        while (i <= n - 3) { // 确保窗口长度至少为 3
+//            int editDistance = calculateEditDistance(s.substring(i, i + 3));
+//            if (editDistance <= m) {
+//                count++; // 匹配成功
+//                m -= editDistance; // 更新剩余编辑距离
+//                i += 3; // 向后移动 3 个位置，避免重复匹配
+//            } else {
+//                i++; // 向后移动 1 个位置
+//            }
+//        }
+//
+//        return count;
+//    }
+//
+//    private static int calculateEditDistance(String source) {
+//        String target = "UCC";
+//        int distance = 0;
+//
+//        // 逐字符比较，计算编辑距离
+//        for (int i = 0; i < source.length(); i++) {
+//            if (source.charAt(i) != target.charAt(i)) {
+//                distance++;
+//            }
+//        }
+//        return distance;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(3, "UCUUCCCCC") == 3); // 测试用例 1
+//        System.out.println(solution(6, "U") == 2); // 测试用例 2
+//        System.out.println(solution(2, "UCCUUU") == 2); // 测试用例 3
+//    }
+//}
+import java.util.Arrays;
+
+import java.util.Arrays;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
-    public static int solution(int m, String s) {
-        int count = 0; // 记录成功匹配 "UCC" 的次数
-        int n = s.length();
-        int i = 0;
-
-        // 处理字符串长度小于 3 的情况
-        if (n < 3) {
-
-            for (int j = 0; j < n; j++) {
-                if (calculateEditDistance(s.substring(j, j + 1)) <= m) {
-                    count++;
-                    m--;
-                }
-            }
-            System.out.println(count);
-            return count;
-        }
-        // 窗口滑动遍历字符串
-        while (i <= n - 3) { // 确保窗口长度至少为 3
-            int editDistance = calculateEditDistance(s.substring(i, i + 3));
-            if (editDistance <= m) {
-                count++; // 匹配成功
-                m -= editDistance; // 更新剩余编辑距离
-                i += 3; // 向后移动 3 个位置，避免重复匹配
-            } else {
-                i++; // 向后移动 1 个位置
+    public static int[] solution(int n) {
+        List<Integer> list = new ArrayList<>(); // 使用ArrayList来存储动态结果
+        for (int i = 1; i <= n; i++) { // 外层循环从1到n
+            for (int j = n; j >= i; j--) { // 内层循环从n到i逆序
+                list.add(j); // 将当前数字添加到列表
             }
         }
-
-        return count;
-    }
-
-    private static int calculateEditDistance(String source) {
-        String target = "UCC";
-        int distance = 0;
-
-        // 逐字符比较，计算编辑距离
-        for (int i = 0; i < source.length(); i++) {
-            if (source.charAt(i) != target.charAt(i)) {
-                distance++;
-            }
+        // 将List转换为int数组
+        int[] result = new int[list.size()];
+        for (int k = 0; k < list.size(); k++) {
+            result[k] = list.get(k);
         }
-        return distance;
+        return result; // 返回最终结果
     }
 
     public static void main(String[] args) {
-        System.out.println(solution(3, "UCUUCCCCC") == 3); // 测试用例 1
-        System.out.println(solution(6, "U") == 2); // 测试用例 2
-        System.out.println(solution(2, "UCCUUU") == 2); // 测试用例 3
+        System.out.println(Arrays.equals(solution(3), new int[]{3, 2, 1, 3, 2, 3}));
+        System.out.println(Arrays.equals(solution(4), new int[]{4, 3, 2, 1, 4, 3, 2, 4, 3, 4}));
+        System.out.println(Arrays.equals(solution(5), new int[]{5, 4, 3, 2, 1, 5, 4, 3, 2, 5, 4, 3, 5, 4, 5}));
     }
 }
