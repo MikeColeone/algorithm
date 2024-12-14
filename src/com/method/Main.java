@@ -243,25 +243,51 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//public class Main {
+//    public static int[] solution(int n) {
+//        List<Integer> list = new ArrayList<>(); // 使用ArrayList来存储动态结果
+//        for (int i = 1; i <= n; i++) { // 外层循环从1到n
+//            for (int j = n; j >= i; j--) { // 内层循环从n到i逆序
+//                list.add(j); // 将当前数字添加到列表
+//            }
+//        }
+//        // 将List转换为int数组
+//        int[] result = new int[list.size()];
+//        for (int k = 0; k < list.size(); k++) {
+//            result[k] = list.get(k);
+//        }
+//        return result; // 返回最终结果
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(Arrays.equals(solution(3), new int[]{3, 2, 1, 3, 2, 3}));
+//        System.out.println(Arrays.equals(solution(4), new int[]{4, 3, 2, 1, 4, 3, 2, 4, 3, 4}));
+//        System.out.println(Arrays.equals(solution(5), new int[]{5, 4, 3, 2, 1, 5, 4, 3, 2, 5, 4, 3, 5, 4, 5}));
+//    }
+//}
+
+
+
 public class Main {
-    public static int[] solution(int n) {
-        List<Integer> list = new ArrayList<>(); // 使用ArrayList来存储动态结果
-        for (int i = 1; i <= n; i++) { // 外层循环从1到n
-            for (int j = n; j >= i; j--) { // 内层循环从n到i逆序
-                list.add(j); // 将当前数字添加到列表
+    public static int solution(int x, int y) {
+        int count = 0;
+
+        for (int d = 1; d <= 9; d++) {
+            long num = d;
+            while (num <= y) {
+                if (num >= x && num <= y) {
+                    count++;  // 如果在区间内，计数
+                }
+                num = num * 10 + d;
             }
         }
-        // 将List转换为int数组
-        int[] result = new int[list.size()];
-        for (int k = 0; k < list.size(); k++) {
-            result[k] = list.get(k);
-        }
-        return result; // 返回最终结果
-    }
 
+        return count;
+    }
     public static void main(String[] args) {
-        System.out.println(Arrays.equals(solution(3), new int[]{3, 2, 1, 3, 2, 3}));
-        System.out.println(Arrays.equals(solution(4), new int[]{4, 3, 2, 1, 4, 3, 2, 4, 3, 4}));
-        System.out.println(Arrays.equals(solution(5), new int[]{5, 4, 3, 2, 1, 5, 4, 3, 2, 5, 4, 3, 5, 4, 5}));
+        // Add your test cases here
+
+        System.out.println(solution(1, 10) == 9);
+        System.out.println(solution(2, 22) == 10);
     }
 }
