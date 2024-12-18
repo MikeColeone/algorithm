@@ -130,9 +130,7 @@ package com.method;//package com.method;
 //}
 
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 //public class Main {
 //    public static int solution(int[] values) {
@@ -239,9 +237,7 @@ import java.util.Arrays;
 
 import java.util.Arrays;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 //public class Main {
 //    public static int[] solution(int n) {
@@ -268,26 +264,141 @@ import java.util.List;
 
 
 
-public class Main {
-    public static int solution(int x, int y) {
-        int count = 0;
+//public class Main {
+//    public static int solution(int x, int y) {
+//        int count = 0;
+//        for (int d = 1; d <= 9; d++) {
+//            for(long num = d;num <= y; num = num * 10 + d) {
+//                if (num >= x && num <= y) {
+//                    count++;  // 如果在区间内，计数
+//                }
+//
+//            }
+//        }
+//
+//        return count;
+//    }
+//    public static void main(String[] args) {
+//        // Add your test cases here
+//
+//        System.out.println(solution(1, 10) == 9);
+//        System.out.println(solution(2, 22) == 10);
+//    }
+//}
 
-        for (int d = 1; d <= 9; d++) {
-            long num = d;
-            while (num <= y) {
-                if (num >= x && num <= y) {
-                    count++;  // 如果在区间内，计数
-                }
-                num = num * 10 + d;
+
+import java.util.Arrays;
+
+//public class Main {
+//    public static int solution(int[] A) {
+//        // 1. 将分数按降序排序（高到低）
+//        A = Arrays.stream(A)
+//                .boxed()
+//                .sorted((a, b) -> b - a) // 降序
+//                .mapToInt(Integer::intValue)
+//                .toArray();
+//
+//        int n = A.length; // 学生人数
+//        int liarCount = 0; // 说谎学生的数量
+//        int count = 0; // 当前分数 ≤ A[i] 的学生人数
+//
+//        // 2. 遍历分数数组
+//        for (int i = 0; i < n; i++) {
+//            count++; // 每遍历一个学生，当前分数 ≤ A[i] 的人数加1
+//
+//            // 比较当前分数 ≤ A[i] 的人数 和 比他分数高的学生人数
+//            if (count > i + 1) { // i+1 表示有多少人比他分数高
+//                liarCount++; // 满足条件，计为说谎学生
+//            }
+//        }
+//
+//        return liarCount;
+//    }
+//
+//    public static void main(String[] args) {
+//        // 测试用例
+//        System.out.println(solution(new int[]{100, 100, 100}) == 3); // 输出 3
+//        System.out.println(solution(new int[]{2, 1, 3}) == 2);       // 输出 2
+//        System.out.println(solution(new int[]{30, 1, 30, 30}) == 3); // 输出 3
+//        System.out.println(solution(new int[]{19, 27, 73, 55, 88}) == 3); // 输出 3
+//        System.out.println(solution(new int[]{19, 27, 73, 55, 88, 88, 2, 17, 22}) == 5); // 输出 5
+//    }
+//}
+
+
+//public class Main {
+//    public static String solution(String binary1, String binary2) {
+//        // Please write your code here
+//        int decimal1 = Integer.parseInt(binary1, 2);  // 将第一个二进制字符串转十进制
+//        int decimal2 = Integer.parseInt(binary2, 2);  // 将第二个二进制字符串转十进制
+//        int result = decimal1 + decimal2;  // 十进制相加
+//        return String.valueOf(result);  // 结果转字符串返回
+//    }
+//
+//    public static void main(String[] args) {
+//        // You can add more test cases here
+//        System.out.println(solution("101", "110").equals("11"));
+//        System.out.println(solution("111111", "10100").equals("83"));
+//        System.out.println(solution("111010101001001011", "100010101001").equals("242420"));
+//        System.out.println(solution("111010101001011", "10010101001").equals("31220"));
+//    }
+//}
+
+//import java.math.BigInteger;
+//
+//public class Main {
+//    public static String solution(String a, String b) {
+//        StringBuilder result = new StringBuilder();
+//        int carry = 0; // 进位
+//        int i = a.length() - 1, j = b.length() - 1;
+//
+//        // 从右往左逐位相加
+//        while (i >= 0 || j >= 0 || carry > 0) {
+//            int bit1 = (i >= 0) ? a.charAt(i--) - '0' : 0;
+//            int bit2 = (j >= 0) ? b.charAt(j--) - '0' : 0;
+//
+//            int sum = bit1 + bit2 + carry; // 当前位相加
+//            result.append(sum % 2); // 当前位结果
+//            carry = sum / 2; // 更新进位
+//        }
+//
+//
+//        BigInteger decimalResult = new BigInteger(result.reverse().toString(), 2);
+//        return decimalResult.toString(); // 返回十进制字符串
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution("101", "110").equals("11"));
+//        System.out.println(solution("111111", "10100").equals("83"));
+//        System.out.println(solution("111010101001001011", "100010101001").equals("242420"));
+//        System.out.println(solution("111010101001011", "10010101001").equals("31220"));
+//    }
+//}
+
+
+
+public class Main {
+    public static boolean solution(int[] nums) {
+        boolean increasing = true; // 假设数组是单调递增的
+        boolean decreasing = true; // 假设数组是单调递减的
+
+        // 遍历数组，检查每个相邻元素的关系
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] > nums[i - 1]) {
+                decreasing = false; // 如果当前元素大于前一个元素，则不是单调递减
+            }
+            if (nums[i] < nums[i - 1]) {
+                increasing = false; // 如果当前元素小于前一个元素，则不是单调递增
             }
         }
 
-        return count;
+        return increasing || decreasing;
     }
-    public static void main(String[] args) {
-        // Add your test cases here
 
-        System.out.println(solution(1, 10) == 9);
-        System.out.println(solution(2, 22) == 10);
+    public static void main(String[] args) {
+        System.out.println(solution(new int[]{1, 2, 2, 3}) == true);
+        System.out.println(solution(new int[]{6, 5, 4, 4}));
+        System.out.println(solution(new int[]{1, 3, 2, 4, 5}) == false);
+        System.out.println(solution(new int[]{1, 1, 1, 1}) == true);
     }
 }
