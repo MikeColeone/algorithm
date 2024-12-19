@@ -376,29 +376,60 @@ import java.util.Arrays;
 //}
 
 
-
+//
+//public class Main {
+//    public static boolean solution(int[] nums) {
+//        boolean increasing = true; // 假设数组是单调递增的
+//        boolean decreasing = true; // 假设数组是单调递减的
+//
+//        // 遍历数组，检查每个相邻元素的关系
+//        for (int i = 1; i < nums.length; i++) {
+//            if (nums[i] > nums[i - 1]) {
+//                decreasing = false; // 如果当前元素大于前一个元素，则不是单调递减
+//            }
+//            if (nums[i] < nums[i - 1]) {
+//                increasing = false; // 如果当前元素小于前一个元素，则不是单调递增
+//            }
+//        }
+//
+//        return increasing || decreasing;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(new int[]{1, 2, 2, 3}) == true);
+//        System.out.println(solution(new int[]{6, 5, 4, 4}));
+//        System.out.println(solution(new int[]{1, 3, 2, 4, 5}) == false);
+//        System.out.println(solution(new int[]{1, 1, 1, 1}) == true);
+//    }
+//}
 public class Main {
-    public static boolean solution(int[] nums) {
-        boolean increasing = true; // 假设数组是单调递增的
-        boolean decreasing = true; // 假设数组是单调递减的
-
-        // 遍历数组，检查每个相邻元素的关系
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] > nums[i - 1]) {
-                decreasing = false; // 如果当前元素大于前一个元素，则不是单调递减
-            }
-            if (nums[i] < nums[i - 1]) {
-                increasing = false; // 如果当前元素小于前一个元素，则不是单调递增
-            }
-        }
-
-        return increasing || decreasing;
+    public static void main(String[] args) {
+        System.out.println(solution("0.1", "1.1") == -1);
+        System.out.println(solution("1.0.1", "1") == 1);
+        System.out.println(solution("7.5.2.4", "7.5.3") == -1);
+        System.out.println(solution("1.0", "1.0.0") == 0);
     }
 
-    public static void main(String[] args) {
-        System.out.println(solution(new int[]{1, 2, 2, 3}) == true);
-        System.out.println(solution(new int[]{6, 5, 4, 4}));
-        System.out.println(solution(new int[]{1, 3, 2, 4, 5}) == false);
-        System.out.println(solution(new int[]{1, 1, 1, 1}) == true);
+    public static int solution(String version1, String version2) {
+        // 将版本号字符串分割成修订号数组
+        String[] v1 = version1.split("\\.");
+        String[] v2 = version2.split("\\.");
+
+        // 找到两个版本号数组的最大长度
+        int maxLength = Math.max(v1.length, v2.length);
+
+        // 从左到右依次比较每个修订号
+        for (int i = 0; i < maxLength; i++) {
+            // 获取当前修订号的整数值，超出数组长度的部分默认补0
+            int num1 = i < v1.length ? Integer.parseInt(v1[i]) : 0;
+            int num2 = i < v2.length ? Integer.parseInt(v2[i]) : 0;
+
+            // 比较当前修订号
+            if (num1 > num2) return 1;
+            if (num1 < num2) return -1;
+        }
+
+        // 所有修订号都相等，返回0
+        return 0;
     }
 }
