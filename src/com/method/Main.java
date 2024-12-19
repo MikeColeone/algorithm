@@ -402,6 +402,8 @@ import java.util.Arrays;
 //        System.out.println(solution(new int[]{1, 1, 1, 1}) == true);
 //    }
 //}
+
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(solution("0.1", "1.1") == -1);
@@ -431,5 +433,38 @@ public class Main {
 
         // 所有修订号都相等，返回0
         return 0;
+    }
+}
+
+
+public class Main {
+    public static String solution(int n, int k, String s) {
+        char[] chars = s.toCharArray(); // 将字符串转换成字符数组，方便操作
+        int i = 0; // 遍历字符串的指针
+        int swaps = 0; // 记录已使用的操作次数
+
+        while (i < n && k > 0) {
+            if (chars[i] == '0') {
+                // 找到前面能交换的最远位置
+                int j = i;
+                while (j > 0 && chars[j - 1] == '1' && k > 0) {
+                    // 将 '0' 与前面的 '1' 交换
+                    char temp = chars[j];
+                    chars[j] = chars[j - 1];
+                    chars[j - 1] = temp;
+
+                    j--; // 继续向前移动
+                    k--; // 消耗一次操作次数
+                }
+            }
+            i++; // 继续向后遍历
+        }
+        return new String(chars); // 将字符数组转回字符串
+    }
+
+    public static void main(String[] args) {
+        System.out.println(solution(5, 2, "01010").equals("00101")); // true
+        System.out.println(solution(7, 3, "1101001").equals("0110101")); // true
+        System.out.println(solution(4, 1, "1001").equals("0101")); // true
     }
 }
