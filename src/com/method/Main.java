@@ -404,67 +404,225 @@ import java.util.Arrays;
 //}
 
 
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.println(solution("0.1", "1.1") == -1);
+//        System.out.println(solution("1.0.1", "1") == 1);
+//        System.out.println(solution("7.5.2.4", "7.5.3") == -1);
+//        System.out.println(solution("1.0", "1.0.0") == 0);
+//    }
+//
+//    public static int solution(String version1, String version2) {
+//        // 将版本号字符串分割成修订号数组
+//        String[] v1 = version1.split("\\.");
+//        String[] v2 = version2.split("\\.");
+//
+//        // 找到两个版本号数组的最大长度
+//        int maxLength = Math.max(v1.length, v2.length);
+//
+//        // 从左到右依次比较每个修订号
+//        for (int i = 0; i < maxLength; i++) {
+//            // 获取当前修订号的整数值，超出数组长度的部分默认补0
+//            int num1 = i < v1.length ? Integer.parseInt(v1[i]) : 0;
+//            int num2 = i < v2.length ? Integer.parseInt(v2[i]) : 0;
+//
+//            // 比较当前修订号
+//            if (num1 > num2) return 1;
+//            if (num1 < num2) return -1;
+//        }
+//
+//        // 所有修订号都相等，返回0
+//        return 0;
+//    }
+//}
+//
+//
+//public class Main {
+//    public static String solution(int n, int k, String s) {
+//        char[] chars = s.toCharArray(); // 将字符串转换成字符数组，方便操作
+//        int i = 0; // 遍历字符串的指针
+//        int swaps = 0; // 记录已使用的操作次数
+//
+//        while (i < n && k > 0) {
+//            if (chars[i] == '0') {
+//                // 找到前面能交换的最远位置
+//                int j = i;
+//                while (j > 0 && chars[j - 1] == '1' && k > 0) {
+//                    // 将 '0' 与前面的 '1' 交换
+//                    char temp = chars[j];
+//                    chars[j] = chars[j - 1];
+//                    chars[j - 1] = temp;
+//
+//                    j--; // 继续向前移动
+//                    k--; // 消耗一次操作次数
+//                }
+//            }
+//            i++; // 继续向后遍历
+//        }
+//        return new String(chars); // 将字符数组转回字符串
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(5, 2, "01010").equals("00101")); // true
+//        System.out.println(solution(7, 3, "1101001").equals("0110101")); // true
+//        System.out.println(solution(4, 1, "1001").equals("0101")); // true
+//    }
+//}
+
+
+//public class Main {
+//    public static int solution(int n, int k, int[] data) {
+//        int cost = data[0]; // 总花费
+//        int food = 0; // 背包当前食物数量
+//
+//        for (int i = 0; i < n; i++) {
+//            int minP = data[i];
+//
+//            for (int j = i; j < Math.min(i + food, n); j++) {
+//                minP = Math.min(minP, data[j]);
+//            }
+//
+//            // 计算背包剩余空间
+//            int c = k - food;
+//            if (c > 0 && data[i] == minP) {
+//                // 尽可能购买食物，但不要超过剩余天数
+//                int d = n - 1 - i; // 剩余需要的天数
+//                int buy = Math.min(c, d);
+//                System.out.println("buy   " + buy);
+//                System.out.println("price    " + data[i]);
+//                cost += buy * minP;
+//                food += buy;
+//            }
+//            // 每天先消耗 1 单位食物
+//            if (food > 0) {
+//                food--;
+//            } else {
+//                // 背包空了，必须购买当天的食物
+//                cost += data[i];
+//            }
+//        }
+//        return cost;
+//    }
+//
+//    public static void main(String[] args) {
+//        // Add your test cases here
+//
+//         System.out.println(solution(5, 2, new int[] { 1, 2, 3, 3, 2 }) == 9);
+////        System.out.println(solution(6, 3, new int[] { 4, 1, 5, 2, 1, 3 }));
+//    }
+//}
+
+//public class Main {
+//    public static int solution(int[] nums) {
+//        // write code here
+//        int ans = -1;
+//        int max = Integer.MIN_VALUE;
+//        for (int i = 0; i < nums.length; i++) {
+//            max = Math.max(max, nums[i]);
+//        }
+//        for (int i = 0; i < max; i++) {
+//            int count = 0;
+//            ans = i;
+//            for (int j = 0; j < nums.length; j++) {
+//                if(nums[j]>=ans){
+//                    count++;
+//                }
+//            }
+//            if(count==ans) return ans;
+//        }
+//        return -1;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(new int[]{3, 8}) == 2);
+//        System.out.println(solution(new int[]{0, 3, 4, 0, 4}) == 3);
+//        System.out.println(solution(new int[]{4, 7, 8, 1, 0}) == 3);
+//        System.out.println(solution(new int[]{5, 6, 0, 1, 2}) == -1);
+//        System.out.println(solution(new int[]{7, 3, 4, 5, 6}) == 4);
+//    }
+//}
+
+
+import java.util.*;
 public class Main {
-    public static void main(String[] args) {
-        System.out.println(solution("0.1", "1.1") == -1);
-        System.out.println(solution("1.0.1", "1") == 1);
-        System.out.println(solution("7.5.2.4", "7.5.3") == -1);
-        System.out.println(solution("1.0", "1.0.0") == 0);
-    }
+    public static int[] solution(int n, int max, int[] array) {
+        Map<Integer, Integer> countMap = new HashMap<>(); // 统计每个牌面的数量
+        List<Integer> threeCandidates = new ArrayList<>(); // 存储三张相同牌面的候选
+        List<Integer> twoCandidates = new ArrayList<>();   // 存储两张相同牌面的候选
 
-    public static int solution(String version1, String version2) {
-        // 将版本号字符串分割成修订号数组
-        String[] v1 = version1.split("\\.");
-        String[] v2 = version2.split("\\.");
-
-        // 找到两个版本号数组的最大长度
-        int maxLength = Math.max(v1.length, v2.length);
-
-        // 从左到右依次比较每个修订号
-        for (int i = 0; i < maxLength; i++) {
-            // 获取当前修订号的整数值，超出数组长度的部分默认补0
-            int num1 = i < v1.length ? Integer.parseInt(v1[i]) : 0;
-            int num2 = i < v2.length ? Integer.parseInt(v2[i]) : 0;
-
-            // 比较当前修订号
-            if (num1 > num2) return 1;
-            if (num1 < num2) return -1;
+        // 统计每个牌面的出现次数
+        for (int num : array) {
+            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
         }
 
-        // 所有修订号都相等，返回0
-        return 0;
-    }
-}
+        // 将符合条件的牌面放入候选列表
+        for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
+            int card = entry.getKey();
+            int freq = entry.getValue();
+            if (freq >= 3) {
+                threeCandidates.add(card); // 至少有3张，加入三张候选
+            }
+            if (freq >= 2) {
+                twoCandidates.add(card);   // 至少有2张，加入两张候选
+            }
+        }
+
+        // 自定义比较规则：1 (A) 最大，K(13) > Q(12) > J(11) > 10 > ... > 2
+        Comparator<Integer> comparator = (a, b) -> {
+            if (a == 1 && b != 1) return -1; // A最大
+            if (a != 1 && b == 1) return 1;
+            return b - a; // 其他牌面按降序排序
+        };
 
 
-public class Main {
-    public static String solution(int n, int k, String s) {
-        char[] chars = s.toCharArray(); // 将字符串转换成字符数组，方便操作
-        int i = 0; // 遍历字符串的指针
-        int swaps = 0; // 记录已使用的操作次数
+        threeCandidates.sort(comparator);
+        System.out.println(Arrays.toString(threeCandidates.toArray()));
+        twoCandidates.sort(comparator);
 
-        while (i < n && k > 0) {
-            if (chars[i] == '0') {
-                // 找到前面能交换的最远位置
-                int j = i;
-                while (j > 0 && chars[j - 1] == '1' && k > 0) {
-                    // 将 '0' 与前面的 '1' 交换
-                    char temp = chars[j];
-                    chars[j] = chars[j - 1];
-                    chars[j - 1] = temp;
+        int bestA = 0, bestB = 0; // 结果的三张和两张的牌面值
 
-                    j--; // 继续向前移动
-                    k--; // 消耗一次操作次数
+        int sum = 0;
+// 遍历所有三张候选组合，寻找符合要求的最大葫芦
+        for (int a : threeCandidates) {
+            for (int b : twoCandidates) {
+                // 两张牌 b 可以从三张牌 a 中取，但要保证 a ≠ b
+                if (a == b) continue;
+
+                // 计算牌面和，判断是否满足最大和的限制
+                int sum = 3 * a + 2 * b;
+                if (sum <= max) {
+                    // 按照 a > b 的规则，寻找最优的组合
+                    if (bestA == 0 || a > bestA || (a == bestA && b > bestB)) {
+                        bestA = a;
+                        bestB = b;
+                    }
                 }
             }
-            i++; // 继续向后遍历
+
+            // 处理两张相同牌 b 可以从三张 a 中取的情况
+            int b = a; // 直接从 a 中选取两张相同牌
+            int sum = 3 * a + 2 * b;
+            if (sum <= max) {
+                if (bestA == 0 || a > bestA || (a == bestA && b > bestB)) {
+                    bestA = a;
+                    bestB = b;
+                }
+            }
         }
-        return new String(chars); // 将字符数组转回字符串
+
+        // 如果未找到符合条件的葫芦，返回 [0, 0]
+        if (bestA == 0 && bestB == 0) {
+            return new int[]{0, 0};
+        }
+        return new int[]{bestA, bestB};
     }
 
     public static void main(String[] args) {
-        System.out.println(solution(5, 2, "01010").equals("00101")); // true
-        System.out.println(solution(7, 3, "1101001").equals("0110101")); // true
-        System.out.println(solution(4, 1, "1001").equals("0101")); // true
+        // Add your test cases here
+
+        System.out.println(java.util.Arrays.equals(solution(9, 34, new int[]{6, 6, 6, 8, 8, 8, 5, 5, 1}), new int[]{8, 5}));
+        System.out.println(java.util.Arrays.equals(solution(31,42,new int[]{3,3,11,12,12,2,13,5,13,1,13,8,8,1,8,13,12,9,2,11,3,5,8,11,1,11,1,5,4,2,5}),new int[]{1,13}));
+        System.out.println(java.util.Arrays.equals(solution(9, 37, new int[]{9, 9, 9, 9, 6, 6, 6, 6, 13}), new int[]{6, 9}));
+        System.out.println(java.util.Arrays.equals(solution(9, 40, new int[]{1, 11, 13, 12, 7, 8, 11, 5, 6}), new int[]{0, 0}));
     }
 }
