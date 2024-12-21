@@ -667,30 +667,32 @@ import java.util.*;
 //}
 
 
-public class Main {
-    public static int solution(int n, int H, int A, int[] h, int[] a) {
-        int[] dp = new int[n]; // dp[i] 表示以第 i 个怪物为结尾时，最多击败的怪物数
-        int maxCount = 0; // 最终结果
+//public class Main {
+//    public static int solution(int n, int H, int A, int[] h, int[] a) {
+//        int[] dp = new int[n]; // dp[i] 表示以第 i 个怪物为结尾时，最多击败的怪物数
+//        int maxCount = 0; // 最终结果
+//
+//        for (int i = 0; i < n; i++) {
+//            if (h[i] < H && a[i] < A) { // 只有当前怪物满足条件才可能击败
+//                dp[i] = 1; // 初始化为单独击败当前怪物 重置！！！！
+//                for (int j = 0; j < i; j++) {
+//                    // 如果怪物 j 可以击败，且属性递增 是j到i的序列
+//                    if (h[j] < h[i] && a[j] < a[i]) {
+//                        dp[i] = Math.max(dp[i], dp[j] + 1);
+//                    }
+//                }
+//                maxCount = Math.max(maxCount, dp[i]); // 更新最大值
+//            }
+//        }
+//
+//        return maxCount;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(3, 4, 5, new int[] { 1, 2, 3 }, new int[] { 3, 2, 1 }) == 1);
+//        System.out.println(solution(5, 10, 10, new int[] { 6, 9, 12, 4, 7 }, new int[] { 8, 9, 10, 2, 5 }) == 2);
+//        System.out.println(solution(4, 20, 25, new int[] { 10, 15, 18, 22 }, new int[] { 12, 18, 20, 26 }) == 3);
+//    }
+//}
 
-        for (int i = 0; i < n; i++) {
-            if (h[i] < H && a[i] < A) { // 只有当前怪物满足条件才可能击败
-                dp[i] = 1; // 初始化为单独击败当前怪物 重置！！！！
-                for (int j = 0; j < i; j++) {
-                    // 如果怪物 j 可以击败，且属性递增
-                    if (h[j] < h[i] && a[j] < a[i]) {
-                        dp[i] = Math.max(dp[i], dp[j] + 1);
-                    }
-                }
-                maxCount = Math.max(maxCount, dp[i]); // 更新最大值
-            }
-        }
-
-        return maxCount;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(solution(3, 4, 5, new int[] { 1, 2, 3 }, new int[] { 3, 2, 1 }) == 1);
-        System.out.println(solution(5, 10, 10, new int[] { 6, 9, 12, 4, 7 }, new int[] { 8, 9, 10, 2, 5 }) == 2);
-        System.out.println(solution(4, 20, 25, new int[] { 10, 15, 18, 22 }, new int[] { 12, 18, 20, 26 }) == 3);
-    }
-}
+//区分最长递归序列 该题等价与取出最长递增子序列
