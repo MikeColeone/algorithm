@@ -11,6 +11,7 @@
 包括以下算法：
 
 1. 动态规划
+   - 豆包：6. 小E的怪物挑战
 2. 回溯算法：
 - 双指针：
   - [233.平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/description/)

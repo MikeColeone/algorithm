@@ -544,85 +544,153 @@ import java.util.Arrays;
 
 
 import java.util.*;
+//public class Main {
+//    public static int[] solution(int n, int max, int[] array) {
+//        Map<Integer, Integer> countMap = new HashMap<>(); // 统计每个牌面的数量
+//        List<Integer> threeCandidates = new ArrayList<>(); // 存储三张相同牌面的候选
+//        List<Integer> twoCandidates = new ArrayList<>();   // 存储两张相同牌面的候选
+//
+//        // 统计每个牌面的出现次数
+//        for (int num : array) {
+//            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
+//        }
+//
+//        // 将符合条件的牌面放入候选列表
+//        for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
+//            int card = entry.getKey();
+//            int freq = entry.getValue();
+//            if (freq >= 3) {
+//                threeCandidates.add(card); // 至少有3张，加入三张候选
+//            }
+//            if (freq >= 2) {
+//                twoCandidates.add(card);   // 至少有2张，加入两张候选
+//            }
+//        }
+//
+//        // 自定义比较规则：1 (A) 最大，K(13) > Q(12) > J(11) > 10 > ... > 2
+//        Comparator<Integer> comparator = (a, b) -> {
+//            if (a == 1 && b != 1) return -1; // A最大
+//            if (a != 1 && b == 1) return 1;
+//            return b - a; // 其他牌面按降序排序
+//        };
+//
+//
+//        threeCandidates.sort(comparator);
+//        System.out.println(Arrays.toString(threeCandidates.toArray()));
+//        twoCandidates.sort(comparator);
+//
+//        int bestA = 0, bestB = 0; // 结果的三张和两张的牌面值
+//
+//        int sum = 0;
+//// 遍历所有三张候选组合，寻找符合要求的最大葫芦
+//        for (int a : threeCandidates) {
+//            for (int b : twoCandidates) {
+//                // 两张牌 b 可以从三张牌 a 中取，但要保证 a ≠ b
+//                if (a == b) continue;
+//
+//                // 计算牌面和，判断是否满足最大和的限制
+//                int sum = 3 * a + 2 * b;
+//                if (sum <= max) {
+//                    // 按照 a > b 的规则，寻找最优的组合
+//                    if (bestA == 0 || a > bestA || (a == bestA && b > bestB)) {
+//                        bestA = a;
+//                        bestB = b;
+//                    }
+//                }
+//            }
+//
+//            // 处理两张相同牌 b 可以从三张 a 中取的情况
+//            int b = a; // 直接从 a 中选取两张相同牌
+//            int sum = 3 * a + 2 * b;
+//            if (sum <= max) {
+//                if (bestA == 0 || a > bestA || (a == bestA && b > bestB)) {
+//                    bestA = a;
+//                    bestB = b;
+//                }
+//            }
+//        }
+//
+//        // 如果未找到符合条件的葫芦，返回 [0, 0]
+//        if (bestA == 0 && bestB == 0) {
+//            return new int[]{0, 0};
+//        }
+//        return new int[]{bestA, bestB};
+//    }
+//
+//    public static void main(String[] args) {
+//        // Add your test cases here
+//
+//        System.out.println(java.util.Arrays.equals(solution(9, 34, new int[]{6, 6, 6, 8, 8, 8, 5, 5, 1}), new int[]{8, 5}));
+//        System.out.println(java.util.Arrays.equals(solution(31,42,new int[]{3,3,11,12,12,2,13,5,13,1,13,8,8,1,8,13,12,9,2,11,3,5,8,11,1,11,1,5,4,2,5}),new int[]{1,13}));
+//        System.out.println(java.util.Arrays.equals(solution(9, 37, new int[]{9, 9, 9, 9, 6, 6, 6, 6, 13}), new int[]{6, 9}));
+//        System.out.println(java.util.Arrays.equals(solution(9, 40, new int[]{1, 11, 13, 12, 7, 8, 11, 5, 6}), new int[]{0, 0}));
+//    }
+//}
+
+
+    //第一次遇到不是必须选的
+//public class Main {
+//    public static int solution(int n, int H, int A, int[] h, int[] a) {
+//        int flag = 0;//默认是跳过
+//        int ht = 0;
+//        int at = 0;
+//        int count = (h[0] < H && a[0] < A) ? 1 : 0;
+//        if(count==1) {
+//            flag = 1;
+//            ht=h[0];
+//            at = a[0];
+//        }
+//        for (int i = 1; i < n; i++) {
+//            if (h[i] <= H && a[i] <= A && h[i] >= ht && a[i] >= at&&flag==1) {
+//                count++;
+//                ht=h[i];
+//                at = a[i];
+//            }
+//            else if(flag==0) {
+//                if(h[i] <= H && a[i] <= A){
+//                    count++;
+//                    at=a[i];
+//                    ht = h[i];
+//                    flag=1;
+//                }
+//            }
+//        }
+//        System.out.println(count);
+//        return count;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(3, 4, 5, new int[] { 1, 2, 3 }, new int[] { 3, 2, 1 }) == 1);
+//        System.out.println(solution(5, 10, 10, new int[] { 6, 9, 12, 4, 7 }, new int[] { 8, 9, 10, 2, 5 }) == 2);
+//        System.out.println(solution(4, 20, 25, new int[] { 10, 15, 18, 22 }, new int[] { 12, 18, 20, 26 }) == 3);
+//    }
+//}
+
+
 public class Main {
-    public static int[] solution(int n, int max, int[] array) {
-        Map<Integer, Integer> countMap = new HashMap<>(); // 统计每个牌面的数量
-        List<Integer> threeCandidates = new ArrayList<>(); // 存储三张相同牌面的候选
-        List<Integer> twoCandidates = new ArrayList<>();   // 存储两张相同牌面的候选
+    public static int solution(int n, int H, int A, int[] h, int[] a) {
+        int[] dp = new int[n]; // dp[i] 表示以第 i 个怪物为结尾时，最多击败的怪物数
+        int maxCount = 0; // 最终结果
 
-        // 统计每个牌面的出现次数
-        for (int num : array) {
-            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
-        }
-
-        // 将符合条件的牌面放入候选列表
-        for (Map.Entry<Integer, Integer> entry : countMap.entrySet()) {
-            int card = entry.getKey();
-            int freq = entry.getValue();
-            if (freq >= 3) {
-                threeCandidates.add(card); // 至少有3张，加入三张候选
-            }
-            if (freq >= 2) {
-                twoCandidates.add(card);   // 至少有2张，加入两张候选
-            }
-        }
-
-        // 自定义比较规则：1 (A) 最大，K(13) > Q(12) > J(11) > 10 > ... > 2
-        Comparator<Integer> comparator = (a, b) -> {
-            if (a == 1 && b != 1) return -1; // A最大
-            if (a != 1 && b == 1) return 1;
-            return b - a; // 其他牌面按降序排序
-        };
-
-
-        threeCandidates.sort(comparator);
-        System.out.println(Arrays.toString(threeCandidates.toArray()));
-        twoCandidates.sort(comparator);
-
-        int bestA = 0, bestB = 0; // 结果的三张和两张的牌面值
-
-        int sum = 0;
-// 遍历所有三张候选组合，寻找符合要求的最大葫芦
-        for (int a : threeCandidates) {
-            for (int b : twoCandidates) {
-                // 两张牌 b 可以从三张牌 a 中取，但要保证 a ≠ b
-                if (a == b) continue;
-
-                // 计算牌面和，判断是否满足最大和的限制
-                int sum = 3 * a + 2 * b;
-                if (sum <= max) {
-                    // 按照 a > b 的规则，寻找最优的组合
-                    if (bestA == 0 || a > bestA || (a == bestA && b > bestB)) {
-                        bestA = a;
-                        bestB = b;
+        for (int i = 0; i < n; i++) {
+            if (h[i] < H && a[i] < A) { // 只有当前怪物满足条件才可能击败
+                dp[i] = 1; // 初始化为单独击败当前怪物 重置！！！！
+                for (int j = 0; j < i; j++) {
+                    // 如果怪物 j 可以击败，且属性递增
+                    if (h[j] < h[i] && a[j] < a[i]) {
+                        dp[i] = Math.max(dp[i], dp[j] + 1);
                     }
                 }
-            }
-
-            // 处理两张相同牌 b 可以从三张 a 中取的情况
-            int b = a; // 直接从 a 中选取两张相同牌
-            int sum = 3 * a + 2 * b;
-            if (sum <= max) {
-                if (bestA == 0 || a > bestA || (a == bestA && b > bestB)) {
-                    bestA = a;
-                    bestB = b;
-                }
+                maxCount = Math.max(maxCount, dp[i]); // 更新最大值
             }
         }
 
-        // 如果未找到符合条件的葫芦，返回 [0, 0]
-        if (bestA == 0 && bestB == 0) {
-            return new int[]{0, 0};
-        }
-        return new int[]{bestA, bestB};
+        return maxCount;
     }
 
     public static void main(String[] args) {
-        // Add your test cases here
-
-        System.out.println(java.util.Arrays.equals(solution(9, 34, new int[]{6, 6, 6, 8, 8, 8, 5, 5, 1}), new int[]{8, 5}));
-        System.out.println(java.util.Arrays.equals(solution(31,42,new int[]{3,3,11,12,12,2,13,5,13,1,13,8,8,1,8,13,12,9,2,11,3,5,8,11,1,11,1,5,4,2,5}),new int[]{1,13}));
-        System.out.println(java.util.Arrays.equals(solution(9, 37, new int[]{9, 9, 9, 9, 6, 6, 6, 6, 13}), new int[]{6, 9}));
-        System.out.println(java.util.Arrays.equals(solution(9, 40, new int[]{1, 11, 13, 12, 7, 8, 11, 5, 6}), new int[]{0, 0}));
+        System.out.println(solution(3, 4, 5, new int[] { 1, 2, 3 }, new int[] { 3, 2, 1 }) == 1);
+        System.out.println(solution(5, 10, 10, new int[] { 6, 9, 12, 4, 7 }, new int[] { 8, 9, 10, 2, 5 }) == 2);
+        System.out.println(solution(4, 20, 25, new int[] { 10, 15, 18, 22 }, new int[] { 12, 18, 20, 26 }) == 3);
     }
 }
