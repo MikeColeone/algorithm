@@ -696,3 +696,39 @@ import java.util.*;
 //}
 
 //区分最长递归序列 该题等价与取出最长递增子序列
+
+
+import java.util.*;
+
+public class Main {
+    public static String solution(int n, String template, String[] titles) {
+        // 将模板转换为正则表达式
+        String regex = template.replaceAll("\\{.*?\\}", ".*");
+
+        // 构建结果字符串
+        StringBuilder result = new StringBuilder();
+        for (String title : titles) {
+            if (title.matches(regex)) {
+                result.append("True");
+            } else {
+                result.append("False");
+            }
+            result.append(",");
+        }
+
+        // 删除最后一个逗号
+        result.deleteCharAt(result.length() - 1);
+        return result.toString();
+    }
+
+    public static void main(String[] args) {
+        // 你可以添加更多测试用例
+        String[] testTitles1 = {"adcdcefdfeffe", "adcdcefdfeff", "dcdcefdfeffe", "adcdcfe"};
+        String[] testTitles2 = {"CLSomGhcQNvFuzENTAMLCqxBdj", "CLSomNvFuXTASzENTAMLCqxBdj", "CLSomFuXTASzExBdj", "CLSoQNvFuMLCqxBdj", "SovFuXTASzENTAMLCq", "mGhcQNvFuXTASzENTAMLCqx"};
+        String[] testTitles3 = {"abcdefg", "abefg", "efg"};
+
+        System.out.println(solution(4, "ad{xyz}cdc{y}f{x}e", testTitles1).equals("True,False,False,True"));
+        System.out.println(solution(6, "{xxx}h{cQ}N{vF}u{XTA}S{NTA}MLCq{yyy}", testTitles2).equals("False,False,False,False,False,True"));
+        System.out.println(solution(3, "a{bdc}efg", testTitles3).equals("True,True,False"));
+    }
+}
