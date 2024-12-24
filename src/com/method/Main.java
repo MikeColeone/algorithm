@@ -708,3 +708,24 @@ import java.util.*;
 //        System.out.println(solution(3, "a{bdc}efg", testTitles3).equals("True,True,False"));
 //    }
 //}
+
+
+//数值生成和运算问题
+//public class Main {
+//    public static int solution(int n, int start) {
+//        // PLEASE DO NOT MODIFY THE FUNCTION SIGNATURE
+//        // write code here
+//        int result = 0;
+//        for (int i = 0; i < n; i++) {
+//            result ^= (start + 2 * i); // 每次与 start + 2*i 进行异或运算
+//        }
+//        return result;
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(12, 3) == 24);
+//        System.out.println(solution(20, 16) == 0);
+//        System.out.println(solution(18, 9) == 2);
+//        System.out.println(solution(7, 1) == 15);
+//    }
+//}
