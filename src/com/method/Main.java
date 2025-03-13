@@ -729,3 +729,57 @@ import java.util.*;
 //        System.out.println(solution(7, 1) == 15);
 //    }
 //}
+
+
+//糖果分配问题
+import java.util.Arrays;
+//public class Main {
+//    public static int[] solution(int n, int l, int r) {
+//        // 计算最少的小朋友数量
+//        int minFriends = -1;
+//        int maxFriends = -1;
+//
+//        // 最少小朋友数量
+//        if (n % r == 0) {
+//            minFriends = n / r;
+//        }
+//        else minFriends = n / r + 1;
+//
+//        // 最多小朋友数量
+//        if (n % l == 0) {
+//            maxFriends = n / l;
+//        }
+//        else{
+//            maxFriends = n / l + 1;
+//        }
+//
+//        // 如果任意条件不满足，返回 -1
+//        if (minFriends == -1 || maxFriends == -1) {
+//            return new int[]{-1};
+//        }
+//
+//        return new int[]{minFriends, maxFriends};
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(Arrays.equals(solution(12, 2, 5), new int[]{3, 6}));  // 输出: [3, 6]
+//        System.out.println(Arrays.equals(solution(15, 3, 5), new int[]{3, 5}));  // 输出: [3, 5]
+//        System.out.println(Arrays.equals(solution(10, 3, 4), new int[]{-1}));    // 输出: [-1]
+//    }
+//}
+
+
+//代币回收
+//public class Main {
+//    public static int solution(int a, int b) {
+//        // PLEASE DO NOT MODIFY THE FUNCTION SIGNATURE
+//        // write code here
+//        return a % b == 0 ? (a / b) : (a / b + 1);
+//    }
+//
+//    public static void main(String[] args) {
+//        System.out.println(solution(10, 1) == 10);
+//        System.out.println(solution(10, 2) == 5);
+//        System.out.println(solution(10, 3) == 4);
+//    }
+//}
