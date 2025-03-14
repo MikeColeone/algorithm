@@ -5,14 +5,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* 两数之和 */
-public class demo_1 {
-    public static void main(String[] args) {
-        int[] nums = {3, 2, 4};
-        Solution solution = new Solution();
-        int[] ans = solution.twoSum(nums, 6);
-        System.out.println(Arrays.toString(ans)); // 输出 [1, 2]
-    }
-}
+//public class demo_1 {
+//    public static void main(String[] args) {
+//        int[] nums = {3, 2, 4};
+//        Solution solution = new Solution();
+//        int[] ans = solution.twoSum(nums, 6);
+//        System.out.println(Arrays.toString(ans)); // 输出 [1, 2]
+//    }
+//}
 //
 //class Solution {
 //    public int[] twoSum(int[] nums, int target) {

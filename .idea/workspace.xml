@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/entity/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/method/demo_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/method/tree/preorderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_147.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_148.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_283.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/method/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/method/demo_121.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_121.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_206.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_206.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.demo_1.executor": "Run",
+    "Application.demo_283.executor": "Run",
     "Application.doubao_2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -68,9 +70,22 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.demo_1">
+  <component name="RunManager" selected="Application.demo_283">
     <configuration name="demo_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.method.demo_1" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_283" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.method.demo_283" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -97,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo_283" />
         <item itemvalue="Application.demo_1" />
         <item itemvalue="Application.doubao_2" />
       </list>
@@ -147,7 +163,8 @@
       <workItem from="1741082089780" duration="1558000" />
       <workItem from="1741668796871" duration="604000" />
       <workItem from="1741765078416" duration="626000" />
-      <workItem from="1741866588241" duration="1860000" />
+      <workItem from="1741866588241" duration="2674000" />
+      <workItem from="1741933799038" duration="3322000" />
     </task>
     <servers />
   </component>
