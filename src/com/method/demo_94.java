@@ -25,13 +25,13 @@ public class demo_94 {
  *     }
  * }
  */
-//class Solution {
-//    public List<Integer> inorderTraversal(TreeNode root) {
-//        List<Integer> list = new ArrayList<Integer>();
-//        Deque<Node> stack = new LinkedList<Node>();
-//        if()
-//    }
-//}
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<Integer>();
+        Deque<Node> stack = new LinkedList<Node>();
+        if()
+    }
+}
 
 
 /*前序遍历：中，左，右

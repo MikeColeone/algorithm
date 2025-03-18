@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_560.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/method/demo_148.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_148.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/method/demo_283.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_283.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/method/demo_49.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_49.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_128.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_94.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_94.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +162,10 @@
       <workItem from="1741765078416" duration="626000" />
       <workItem from="1741866588241" duration="2674000" />
       <workItem from="1741933799038" duration="6845000" />
-      <workItem from="1742196040245" duration="2202000" />
+      <workItem from="1742196040245" duration="2737000" />
+      <workItem from="1742213780995" duration="410000" />
+      <workItem from="1742279394451" duration="1123000" />
+      <workItem from="1742284866358" duration="1201000" />
     </task>
     <servers />
   </component>
