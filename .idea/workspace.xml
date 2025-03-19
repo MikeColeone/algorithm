@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo_2634.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo_2723.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo_2621.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,27 +46,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.demo_1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.demo_283.executor&quot;: &quot;Run&quot;,
-    &quot;Application.doubao_2.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.demo_2634.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace/Laboratory-Appointment-System/mine/Laboratory-Appointment-System&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.demo_1.executor": "Run",
+    "Application.demo_283.executor": "Run",
+    "Application.doubao_2.executor": "Run",
+    "Node.js.demo_2621.js.executor": "Run",
+    "Node.js.demo_2634.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/workspace/Laboratory-Appointment-System/mine/Laboratory-Appointment-System",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Node.js.demo_2634.js">
+}]]></component>
+  <component name="RunManager" selected="Node.js.demo_2621.js">
     <configuration name="demo_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.method.demo_1" />
       <module name="algorithm" />
@@ -108,11 +107,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo_2621.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/js/demo_2621.js" working-dir="$PROJECT_DIR$/src/com/method/js">
+      <method v="2" />
+    </configuration>
     <configuration name="demo_2634.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/js/demo_2634.js" working-dir="$PROJECT_DIR$/src/com/method/js">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.demo_2621.js" />
         <item itemvalue="Node.js.demo_2634.js" />
         <item itemvalue="Application.demo_283" />
         <item itemvalue="Application.demo_1" />
@@ -171,7 +174,7 @@
       <workItem from="1742213780995" duration="410000" />
       <workItem from="1742279394451" duration="1123000" />
       <workItem from="1742284866358" duration="7652000" />
-      <workItem from="1742368553275" duration="1474000" />
+      <workItem from="1742368553275" duration="2436000" />
     </task>
     <servers />
   </component>
