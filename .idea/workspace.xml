@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo_2635.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo_2634.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/js/demo_2723.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +54,7 @@
     &quot;Application.demo_1.executor&quot;: &quot;Run&quot;,
     &quot;Application.demo_283.executor&quot;: &quot;Run&quot;,
     &quot;Application.doubao_2.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.demo_2634.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -65,7 +68,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.demo_283">
+  <component name="RunManager" selected="Node.js.demo_2634.js">
     <configuration name="demo_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.method.demo_1" />
       <module name="algorithm" />
@@ -105,8 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo_2634.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/js/demo_2634.js" working-dir="$PROJECT_DIR$/src/com/method/js">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.demo_2634.js" />
         <item itemvalue="Application.demo_283" />
         <item itemvalue="Application.demo_1" />
         <item itemvalue="Application.doubao_2" />
@@ -163,7 +170,8 @@
       <workItem from="1742196040245" duration="2737000" />
       <workItem from="1742213780995" duration="410000" />
       <workItem from="1742279394451" duration="1123000" />
-      <workItem from="1742284866358" duration="5158000" />
+      <workItem from="1742284866358" duration="7652000" />
+      <workItem from="1742368553275" duration="1474000" />
     </task>
     <servers />
   </component>
