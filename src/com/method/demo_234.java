@@ -1,5 +1,5 @@
 package com.method;
-
+import com.method.ListNodeMethod.SearchListNode;
 import com.entity.ListNode;
 /*回文链表*/
 public class demo_234 {
@@ -42,11 +42,8 @@ public class demo_234 {
 class Solution {
     public boolean isPalindrome(ListNode head) {
 
-//        StringBuilder temp = new StringBuilder();
-//        ListNode dummyHead = new ListNode(0);
-//        dummyHead.next = head;
-//        ListNode p = dummyHead;
         ListNode head1 = reverseList(head);
+        SearchListNode.search(head1);
         return judge(head,head1);
 
     }
@@ -69,6 +66,8 @@ class Solution {
         ListNode p1 = h1;
         ListNode p2 = h2;
         while (p1 != null && p2 != null) {
+            System.out.println(p1.val);
+            System.out.println(p2.val);
             if(p1.val != p2.val)return false;
             p1 = p1.next;
             p2 = p2.next;
