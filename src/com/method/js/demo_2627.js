@@ -3,6 +3,8 @@
  * @param {number} t milliseconds
  * @return {Function}
  */
+
+/*防抖*/
 var debounce = function(fn, t) {
 
     let timer = null
