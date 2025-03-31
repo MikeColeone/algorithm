@@ -34,4 +34,29 @@ public class test {
     }
 }
 
+class Solution {
+    public int thirdMax(int[] nums) {
+        Integer max = null;
+        Integer smax = null;
+        Integer tmax = null;
 
+        for (Integer num : nums) {  // 注意：这里使用 Integer 而不是 int
+            if (num.equals(max) || num.equals(smax) || num.equals(tmax)) {
+                continue; // 跳过重复值
+            }
+
+            if (max == null || num > max) {
+                tmax = smax;
+                smax = max;
+                max = num;
+            } else if (smax == null || num > smax) {
+                tmax = smax;
+                smax = num;
+            } else if (tmax == null || num > tmax) {
+                tmax = num;
+            }
+        }
+
+        return tmax == null ? max : tmax;
+    }
+}
