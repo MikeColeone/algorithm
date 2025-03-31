@@ -5,7 +5,7 @@ import com.entity.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//逆向扁平化
 //二叉树前序遍历
 public class preorderTraversal {
 
