@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/lq/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_128.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_136.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_155.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_56.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/method/demo_128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_128.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_56.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_56.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +59,7 @@
     "Application.demo_20.executor": "Run",
     "Application.demo_283.executor": "Run",
     "Application.demo_42.executor": "Run",
+    "Application.demo_56.executor": "Run",
     "Application.doubao_2.executor": "Run",
     "Application.test.executor": "Run",
     "Node.js.demo_2621.js.executor": "Run",
@@ -233,7 +239,7 @@
       <workItem from="1743411603784" duration="4457000" />
       <workItem from="1743488944700" duration="545000" />
       <workItem from="1743586991842" duration="606000" />
-      <workItem from="1744360431974" duration="4607000" />
+      <workItem from="1744360431974" duration="6836000" />
     </task>
     <servers />
   </component>
@@ -260,6 +266,12 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/com/method/demo_128.js</url>
+          <line>4</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
