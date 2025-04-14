@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/method/demo_169.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/method/demo_75.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_118.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_75.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_75.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,12 @@
     &quot;accountId&quot;: &quot;9e658768-636c-4a6e-9ed9-4ef185eb0aec&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../java/jdk22/lib/src.zip!/java.base/java/util/Deque.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../java/jdk22/lib/src.zip!/java.base/java/util/List.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../java/jdk22/lib/src.zip!/java.base/java/util/stream/IntStream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../java/jdk22/lib/src.zip!/java.base/java/util/stream/Stream.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -47,33 +53,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.demo_1.executor": "Run",
-    "Application.demo_20.executor": "Run",
-    "Application.demo_283.executor": "Run",
-    "Application.demo_42.executor": "Run",
-    "Application.demo_56.executor": "Run",
-    "Application.doubao_2.executor": "Run",
-    "Application.test.executor": "Run",
-    "Node.js.demo_2621.js.executor": "Run",
-    "Node.js.demo_2634.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/workspace/Laboratory-Appointment-System/mine/Laboratory-Appointment-System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.inline.completion",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo_1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo_20.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo_283.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo_42.executor&quot;: &quot;Run&quot;,
+    &quot;Application.demo_56.executor&quot;: &quot;Run&quot;,
+    &quot;Application.doubao_2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.demo_2621.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.demo_2634.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/workspace/Laboratory-Appointment-System/mine/Laboratory-Appointment-System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.inline.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.demo_20">
     <configuration name="demo_20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.method.demo_20" />
       <module name="algorithm" />
@@ -234,7 +240,7 @@
       <workItem from="1743411603784" duration="4457000" />
       <workItem from="1743488944700" duration="545000" />
       <workItem from="1743586991842" duration="606000" />
-      <workItem from="1744360431974" duration="8808000" />
+      <workItem from="1744360431974" duration="10433000" />
     </task>
     <servers />
   </component>
@@ -247,7 +253,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/method/demo_1.java</url>
           <line>8</line>
-          <properties class="com.method.demo_1" method="main">
+          <properties class="com.method.demo_1">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -256,7 +262,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/method/demo_42.java</url>
           <line>6</line>
-          <properties class="com.method.demo_42" method="main">
+          <properties class="com.method.demo_42">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
