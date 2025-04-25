@@ -18,6 +18,7 @@
    - [121.买股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/description/)
 5. 分治：50 
 6. 哈希表 313
+   - [1399. 统计最大组的数目](https://leetcode.cn/problems/count-largest-group/description/?envType=daily-question&envId=2025-04-23)
 7. 双指针：
    - [233.平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/description/)
 8. 堆
