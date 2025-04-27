@@ -36,9 +36,7 @@
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 13. 数学方法
     - [73. 矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/?envType=study-plan-v2&envId=top-100-liked)  打标记法，在原地修改算法中常用
+14. 前缀和
+    - [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/description/?envType=daily-question&envId=2025-04-25)
   <hr/>
 
-## git
-
-- git config advice.addIgnoredFile false 忽略文件并且不希望git提醒
-- git rm -r --cached  包含两个操作： 从暂存区将文件移除 从远程仓库删除指定文件 删除文件时请指出文件的后缀名

@@ -8,3 +8,8 @@
 
 - 在 JavaScript 中，const _ 是一种常见的命名约定，表示一个变量虽然被声明了，但不会被使用（即忽略该变量的值）
 - json.stringify参数还可以是数组
+
+## git
+
+- git config advice.addIgnoredFile false 忽略文件并且不希望git提醒
+- git rm -r --cached  包含两个操作： 从暂存区将文件移除 从远程仓库删除指定文件 删除文件时请指出文件的后缀名

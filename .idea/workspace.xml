@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/method/demo_2845.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/leetcode_weekly/demo_3531.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/mySort/fastSoted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/mySort/shellSorted.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/mySort/bubbleSorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/mySort/bubbleSorted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tech.md" beforeDir="false" afterPath="$PROJECT_DIR$/tech.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +256,8 @@
       <workItem from="1745218915637" duration="3135000" />
       <workItem from="1745361872036" duration="232000" />
       <workItem from="1745362253056" duration="136000" />
-      <workItem from="1745573307442" duration="2301000" />
+      <workItem from="1745573307442" duration="3702000" />
+      <workItem from="1745743168232" duration="3380000" />
     </task>
     <servers />
   </component>
