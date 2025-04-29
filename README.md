@@ -32,11 +32,14 @@
   - [1423.可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/)
   - [1652.拆炸弹](https://leetcode.cn/problems/defuse-the-bomb/description/)
   - [438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/description/?envType=study-plan-v2&envId=top-100-liked)
+  - [2962. 统计最大元素出现至少 K 次的子数组](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/?envType=daily-question&envId=2025-04-29)
 - 模拟
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 13. 数学方法
     - [73. 矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/?envType=study-plan-v2&envId=top-100-liked)  打标记法，在原地修改算法中常用
 14. 前缀和
     - [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/description/?envType=daily-question&envId=2025-04-25)
+15. 数组
+    - [3392. 统计符合条件长度为 3 的子数组数目](https://leetcode.cn/problems/count-subarrays-of-length-three-with-a-condition/?envType=daily-question&envId=2025-04-27)  注意精度问题 尽量避免触发改为乘法
   <hr/>
 

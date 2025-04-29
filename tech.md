@@ -8,6 +8,7 @@
 
 - 在 JavaScript 中，const _ 是一种常见的命名约定，表示一个变量虽然被声明了，但不会被使用（即忽略该变量的值）
 - json.stringify参数还可以是数组
+- int mx = Arrays.stream(nums).max().getAsInt();获取到最大值
 
 ## git
 
