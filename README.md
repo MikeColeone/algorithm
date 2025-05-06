@@ -10,6 +10,8 @@
    - 豆包：6. 小E的怪物挑战
    - [322.零钱兑换](https://leetcode.cn/problems/coin-change/description/?envType=study-plan-v2&envId=top-100-liked)
 2. 回溯算法：
+3. 贪心
+   - [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/description/?envType=daily-question&envId=2025-05-01)
 
 4. 链表：
    - [前缀和/差分/栈/队列/堆/字典树/并查集/树状数组/线段树](https://leetcode.cn/circle/discuss/mOr1u6/)
@@ -36,6 +38,7 @@
 - 模拟
   - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
 13. 数学方法
+    - [838. 推多米诺](https://leetcode.cn/problems/push-dominoes/description/?envType=daily-question&envId=2025-05-02)   分类讨论
     - [73. 矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/?envType=study-plan-v2&envId=top-100-liked)  打标记法，在原地修改算法中常用
 14. 前缀和
     - [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/description/?envType=daily-question&envId=2025-04-25)
