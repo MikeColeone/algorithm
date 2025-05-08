@@ -9,6 +9,7 @@
 1. 动态规划
    - 豆包：6. 小E的怪物挑战
    - [322.零钱兑换](https://leetcode.cn/problems/coin-change/description/?envType=study-plan-v2&envId=top-100-liked)
+   - [1143.最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/description/)
 2. 回溯算法：
 3. 贪心
    - [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/description/?envType=daily-question&envId=2025-05-01)
