@@ -4,7 +4,7 @@
 //import java.util.Arrays;
 //import java.util.List;
 //
-//public class demo_16 {
+//public class demo_16.js {
 //}
 //class Solution {
 //    public int threeSumClosest(int[] nums, int target) {
