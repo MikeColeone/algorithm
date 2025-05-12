@@ -10,6 +10,20 @@
 - json.stringify参数还可以是数组
 - int mx = Arrays.stream(nums).max().getAsInt();获取到最大值
 
+```js
+const readline = require('readline');
+// rl.question 是 Node.js 中 readline 模块提供的一个方法，用于从命令行中读取一行输入。
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("请输入字符串：", function(s) {
+    console.log("最长子串长度为：", lengthOfLongestSubstring(s));
+    rl.close();
+});
+//获取控制台操作
+```
 ## git
 
 - git config advice.addIgnoredFile false 忽略文件并且不希望git提醒
