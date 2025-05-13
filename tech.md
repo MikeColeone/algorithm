@@ -22,7 +22,7 @@ rl.question("请输入字符串：", function(s) {
     console.log("最长子串长度为：", lengthOfLongestSubstring(s));
     rl.close();
 });
-//获取控制台操作
+//获取控制台输入
 ```
 ## git
 
