@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/method/demo_143.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/method/demo_260.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/method/demo_704.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/method/demo_704.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +114,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo_20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.method.demo_20" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_42" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.method.demo_42" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="demo_42" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.method.demo_42" />
       <module name="algorithm" />
@@ -163,6 +191,22 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.method.test" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="demo_2621.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/js/demo_2621.js" working-dir="$PROJECT_DIR$/src/com/method/js">
+      <method v="2" />
     </configuration>
     <configuration name="demo_2621.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/js/demo_2621.js" working-dir="$PROJECT_DIR$/src/com/method/js">
       <method v="2" />
@@ -171,6 +215,12 @@
       <method v="2" />
     </configuration>
     <configuration name="demo_2634.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/js/demo_2634.js" working-dir="$PROJECT_DIR$/src/com/method/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="demo_2634.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/js/demo_2634.js" working-dir="$PROJECT_DIR$/src/com/method/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="demo_3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/demo_3.js" working-dir="$PROJECT_DIR$/src/com/method">
       <method v="2" />
     </configuration>
     <configuration name="demo_3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/com/method/demo_3.js" working-dir="$PROJECT_DIR$/src/com/method">
@@ -270,7 +320,14 @@
       <workItem from="1747054787410" duration="1163000" />
       <workItem from="1747127124542" duration="2318000" />
       <workItem from="1747232951384" duration="1902000" />
-      <workItem from="1747358311921" duration="1067000" />
+      <workItem from="1747358311921" duration="1797000" />
+      <workItem from="1747465443009" duration="892000" />
+      <workItem from="1747567028326" duration="3918000" />
+      <workItem from="1747656392404" duration="600000" />
+      <workItem from="1747899036784" duration="1921000" />
+      <workItem from="1748505986880" duration="1313000" />
+      <workItem from="1748584831387" duration="1035000" />
+      <workItem from="1748920689466" duration="740000" />
     </task>
     <servers />
   </component>

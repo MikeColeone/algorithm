@@ -46,5 +46,7 @@
     - [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/description/?envType=daily-question&envId=2025-04-25)
 15. 数组
     - [3392. 统计符合条件长度为 3 的子数组数目](https://leetcode.cn/problems/count-subarrays-of-length-three-with-a-condition/?envType=daily-question&envId=2025-04-27)  注意精度问题 尽量避免触发改为乘法
+16. 位运算
+    - [260. 只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/description/)
   <hr/>
 
