@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="824c1ee5-ca2f-44d9-a2e2-2ca4c7c27fdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/method/demo_200.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,7 @@
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.16.0&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.16.15&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace/Laboratory-Appointment-System/mine/Laboratory-Appointment-System&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/workspace/mySit-demo/ruyu-blog/blog-backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -376,6 +375,8 @@
       <workItem from="1748920689466" duration="740000" />
       <workItem from="1748924746093" duration="3225000" />
       <workItem from="1749111113210" duration="334000" />
+      <workItem from="1749620191263" duration="2118000" />
+      <workItem from="1750586522551" duration="629000" />
     </task>
     <servers />
   </component>
