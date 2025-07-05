@@ -1,11 +1,4 @@
 # [leetcode](https://leetcode.cn/)
-
-## Tools&Environment
-## Overview
-
-记录算法刷题记录，题目来源主要是Leetcode，作为个人刷题题库
-包括以下算法：
-
 1. 动态规划
    - 豆包：6. 小E的怪物挑战
    - [322.零钱兑换](https://leetcode.cn/problems/coin-change/description/?envType=study-plan-v2&envId=top-100-liked)
@@ -47,6 +40,6 @@
 15. 数组
     - [3392. 统计符合条件长度为 3 的子数组数目](https://leetcode.cn/problems/count-subarrays-of-length-three-with-a-condition/?envType=daily-question&envId=2025-04-27)  注意精度问题 尽量避免触发改为乘法
 16. 位运算
-    - [260. 只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/description/)
-  <hr/>
+    - [260. 只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/description/)  思考如果有两个不同的数字怎么找到呢？ 我的阿里二面面试题
+    - 
 

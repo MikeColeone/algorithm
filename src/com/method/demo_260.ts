@@ -1,10 +1,24 @@
-//位运算
-
-
-// /**
-//  * @param {number[]} nums
-//  * @return {number[]}
-//  */
+//
+//
+// //最直观的方式当然是hash map
+// var singleNumber = function(nums) {
+//     const map = new Map();
+//
+//     for (let num of nums){
+//         let t = map.get(num) || 0;
+//         map.set(num,t+1);
+//     }
+//
+//     let ans = []
+//     for (let [k,v] of map.entries()){
+//         if(v === 1){
+//             ans.push(k)
+//         }
+//     }
+//     return ans;
+//
+// };
+//
 // var singleNumber = function(nums) {
 //     let temp = 0;
 //     for (num of nums){
@@ -31,30 +45,3 @@
 //     return [ans1,ans2];
 //
 // };
-
-
-//map
-
-/**
- * @param {number[]} nums
- * @return {number[]}
- */
-var singleNumber = function(nums) {
-    const map = new Map();
-
-    for (num of nums){
-        let t = map.get(num);
-        map.set(num,(t==null?0:t));
-    }
-
-    let ans = []
-    for (let [k,v] of map.entries()){
-        if(v === 1){
-            ans.push(k)
-        }
-    }
-    return ans;
-
-};
-
-
