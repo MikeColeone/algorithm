@@ -1,45 +1,133 @@
-# [leetcode](https://leetcode.cn/)
-1. 动态规划
-   - 豆包：6. 小E的怪物挑战
-   - [322.零钱兑换](https://leetcode.cn/problems/coin-change/description/?envType=study-plan-v2&envId=top-100-liked)
-   - [1143.最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/description/)
-   - [42.接雨水](https://leetcode.cn/problems/trapping-rain-water/description/?envType=study-plan-v2&envId=top-100-liked)
-2. 回溯算法：
-3. 贪心
-   - [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/description/?envType=daily-question&envId=2025-05-01)
+# 📘 LeetCode 刷题笔记整理
 
-4. 链表：
-   - [前缀和/差分/栈/队列/堆/字典树/并查集/树状数组/线段树](https://leetcode.cn/circle/discuss/mOr1u6/)
-   - [219.存在重复元素](https://leetcode.cn/problems/contains-duplicate-ii/solutions/1218075/cun-zai-zhong-fu-yuan-su-ii-by-leetcode-kluvk/)
-   - [1679.K和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/description/)
-   - [121.买股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/description/)
-5. 分治：50 
-6. 哈希表 313
-   - [1399. 统计最大组的数目](https://leetcode.cn/problems/count-largest-group/description/?envType=daily-question&envId=2025-04-23)
-7. 双指针：
-   - [233.平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/description/)
-8. 堆
-9. 栈
-   - [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/?envType=study-plan-v2&envId=top-100-liked)
-10. 二叉树
-11. 图论
-12. 二分算法
-  - [34.排序数组的查询元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
-- 滑动窗口
-  - [1423.可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/description/)
-  - [1652.拆炸弹](https://leetcode.cn/problems/defuse-the-bomb/description/)
-  - [438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/description/?envType=study-plan-v2&envId=top-100-liked)
-  - [2962. 统计最大元素出现至少 K 次的子数组](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/description/?envType=daily-question&envId=2025-04-29)
-- 模拟
-  - [2390.从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/description/)
-13. 数学方法
-    - [838. 推多米诺](https://leetcode.cn/problems/push-dominoes/description/?envType=daily-question&envId=2025-05-02)   分类讨论
-    - [73. 矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/?envType=study-plan-v2&envId=top-100-liked)  打标记法，在原地修改算法中常用
-14. 前缀和
-    - [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/description/?envType=daily-question&envId=2025-04-25)
-15. 数组
-    - [3392. 统计符合条件长度为 3 的子数组数目](https://leetcode.cn/problems/count-subarrays-of-length-three-with-a-condition/?envType=daily-question&envId=2025-04-27)  注意精度问题 尽量避免触发改为乘法
-16. 位运算
-    - [260. 只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/description/)  思考如果有两个不同的数字怎么找到呢？ 我的阿里二面面试题
-    - 
+> 持续更新中，涵盖经典题型和算法技巧分类。
+
+---
+
+## 🧮 动态规划（DP）
+
+* 🧮 [322. 零钱兑换](https://leetcode.cn/problems/coin-change/) | 📄 [题解](path/to/dp/322-coin-change.md)
+* 🧮 [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/) | 📄 [题解](path/to/dp/1143-lcs.md)
+* 🧮 [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/) | 📄 [题解](path/to/dp/42-trapping-rain-water.md)
+* 🧮 [6. 小E的怪物挑战 (豆包)](https://leetcode.cn/) | 📄 [题解](path/to/dp/6-monster-challenge.md)
+
+---
+
+## 🔍 回溯算法（Backtracking）
+
+* （待补充）
+
+---
+
+## 💡 贪心算法（Greedy）
+
+* 💡 [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) | 📄 [题解](path/to/greedy/2071-max-tasks.md)
+
+---
+
+## 🔗 链表 & 常用数据结构
+
+* 🔗 [219. 存在重复元素 II](https://leetcode.cn/problems/contains-duplicate-ii/) | 📄 [题解](path/to/linkedlist/219-contains-duplicate-ii.md)
+* 🔗 [1679. K 和数对的最大数目](https://leetcode.cn/problems/max-number-of-k-sum-pairs/) | 📄 [题解](path/to/linkedlist/1679-k-sum-pairs.md)
+* 🔗 [121. 买股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | 📄 [题解](path/to/linkedlist/121-best-time-buy-sell-stock.md)
+* 📚 拓展：前缀和 / 差分 / 栈 / 队列 / 堆 / 字典树 / 并查集 / 树状数组 / 线段树
+  [总结帖](https://leetcode.cn/circle/discuss/mOr1u6/)
+
+---
+
+## 🧠 分治算法（Divide & Conquer）
+
+* 🧠 [50. Pow(x, n)](https://leetcode.cn/problems/powx-n/) | 📄 [题解](path/to/divide-conquer/50-powx-n.md)
+
+---
+
+## 🔢 哈希表（Hash Table）
+
+* 🔢 [1399. 统计最大组的数目](https://leetcode.cn/problems/count-largest-group/) | 📄 [题解](path/to/hash/1399-count-largest-group.md)
+
+---
+
+## 🎯 双指针（Two Pointers）
+
+* 🎯 [233. 平方数之和](https://leetcode.cn/problems/sum-of-square-numbers/) | 📄 [题解](path/to/two-pointers/233-sum-square-numbers.md)
+
+---
+
+## ⛏️ 堆（Heap）
+
+* （待补充）
+
+---
+
+## 📚 栈（Stack）
+
+* 📚 [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | 📄 [题解](path/to/stack/20-valid-parentheses.md)
+
+---
+
+## 🌳 二叉树（Binary Tree）
+
+* （待补充）
+
+---
+
+## 🗺️ 图论（Graph Theory）
+
+* （待补充）
+
+---
+
+## 🔍 二分算法（Binary Search）
+
+* 🔍 [34. 查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) | 📄 [题解](path/to/binary-search/34-find-first-last-position.md)
+
+---
+
+## 📏 滑动窗口（Sliding Window）
+
+* 📏 [1423. 可获得的最大点数](https://leetcode.cn/problems/maximum-points-you-can-obtain-from-cards/) | 📄 [题解](path/to/sliding-window/1423-maximum-points.md)
+* 📏 [1652. 拆炸弹](https://leetcode.cn/problems/defuse-the-bomb/) | 📄 [题解](path/to/sliding-window/1652-defuse-the-bomb.md)
+* 📏 [438. 找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/) | 📄 [题解](path/to/sliding-window/438-find-anagrams.md)
+* 📏 [2962. 最大元素出现至少 K 次的子数组](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) | 📄 [题解](path/to/sliding-window/2962-count-subarrays.md)
+
+---
+
+## 🔧 模拟（Simulation）
+
+* 🔧 [2390. 从字符串移除星号](https://leetcode.cn/problems/removing-stars-from-a-string/) | 📄 [题解](path/to/simulation/2390-removing-stars.md)
+
+---
+
+## 📐 数学方法
+
+* 📐 [838. 推多米诺](https://leetcode.cn/problems/push-dominoes/) | 📄 [题解](path/to/math/838-push-dominoes.md)
+* 📐 [73. 矩阵置零](https://leetcode.cn/problems/set-matrix-zeroes/) | 📄 [题解](path/to/math/73-set-matrix-zeroes.md)
+
+---
+
+## 🔢 前缀和
+
+* 🔢 [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/) | 📄 [题解](path/to/prefix-sum/2845-count-interesting-subarrays.md)
+
+---
+
+## 🧊 数组题
+
+* 🧊 [3392. 长度为 3 的子数组数目](https://leetcode.cn/problems/count-subarrays-of-length-three-with-a-condition/) | 📄 [题解](path/to/array/3392-count-subarrays-length-three.md)
+  💡 注意精度问题，建议用乘法代替除法判断
+
+---
+
+## 🧮 位运算（Bit Manipulation）
+
+* 🧮 [260. 只出现一次的数字 III](https://leetcode.cn/problems/single-number-iii/) | 📄 [题解](path/to/bit/260-single-number-iii.md)
+  💡 如何找出两个只出现一次的数字？（阿里二面题）
+
+---
+
+## 🌊 DFS / BFS
+
+* 🌊 [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) | 📄 [题解](path/to/graph/200-number-of-islands.md)
+
+---
 
