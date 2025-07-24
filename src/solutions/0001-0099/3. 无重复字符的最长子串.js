@@ -3,8 +3,6 @@
  * @return {number}
  */
 
-// 3. 无重复字符的最长子串
-
 const readline = require('readline');
 // rl.question 是 Node.js 中 readline 模块提供的一个方法，用于从命令行中读取一行输入。
 const rl = readline.createInterface({
