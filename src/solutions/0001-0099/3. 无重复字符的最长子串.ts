@@ -18,5 +18,3 @@ function lengthOfLongestSubstring(s: string): number {
 
     return ans;
 };
-
-//滑动窗口不是清空窗口 理一理
