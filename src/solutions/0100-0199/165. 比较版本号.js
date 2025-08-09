@@ -21,7 +21,6 @@ var compareVersion = function(version1, version2) {
         }
     }
 
-    // 所有段落都相等
     return 0;
 };
 
