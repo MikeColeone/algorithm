@@ -12,15 +12,16 @@
  * }
  */
 
-function inorderTraversal(root: TreeNode | null): number[] {
-    const ans: any[] = []
-    const search = (root: TreeNode | null) => {
+function maxDepth(root: TreeNode | null): number {
+    let ans = 0;
+    const search = (temp,root) => {
         if(!root) return;
-        search(root.left);
-        ans.push(root.val);
-        search(root.right);
-
+        temp++;
+        ans = Math.max(temp,ans);
+        search(temp,root.left);
+        search(temp,root.right);
+        
     }
-    search(root);
-    return ans;
+
+    search(0,root)
 };
