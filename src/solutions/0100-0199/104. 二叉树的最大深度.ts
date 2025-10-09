@@ -23,5 +23,6 @@ function maxDepth(root: TreeNode | null): number {
         
     }
 
-    search(0,root)
+    search(0,root);
+    return ans;
 };
